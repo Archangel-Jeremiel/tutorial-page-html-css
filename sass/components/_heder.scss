@@ -1,3 +1,18 @@
 .heder {
-    background-color: blue;
+    // background-color: linear-gradient(
+    //     to right,
+    //     rgba(177, 189, 42, 0.846),
+    //     rgba(42, 58, 232, 0.879)
+    //   );
+      background-image: linear-gradient(
+        to top,
+        rgb(255, 255, 255),
+        rgba(44, 97, 126)
+      );
+}
+
+.heder-logoIcon {
+  fill: transparent;
+  &:hover, &:focus {stroke: #21f3d0;}
+  &:hover, &:focus {fill: #f3f321;}
 }
