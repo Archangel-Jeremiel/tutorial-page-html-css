@@ -1,13 +1,28 @@
-<svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.00017 29L12.0002 67H34.0002H56.0002L64.0002 29L45.0002 52L37.5002 23L36.5002 20L31.5002 21.5L23.0002 52L4.00017 29Z" stroke="black" stroke-width="2"/>
-<path d="M37.3378 7.77657L46.6312 15.5473L34.8164 18.2234L25.523 10.4527L37.3378 7.77657Z" fill="black"/>
-<path d="M45.337 15.7676L46.6312 15.5473L46.6312 24.5L45.337 24.5L45.337 15.7676Z" fill="black"/>
-<path d="M36.2172 12.4196L45.5986 14.6839L46.6312 15.5473L45.3184 15.8447L35.937 13.5804L36.2172 12.4196Z" fill="white"/>
-<path d="M41.4336 21.6569C41.2789 22.298 37.2593 23.7203 33.6972 22.8606C30.1351 22.0009 27.2068 18.9016 27.3615 18.2605C27.5162 17.6194 30.4153 20.8401 33.9773 21.6998C37.5394 22.5596 41.5884 21.0158 41.4336 21.6569Z" fill="black"/>
-<path d="M28.342 14.1978L34.5376 19.3783L42.4142 17.5943L41.4336 21.6569L38.2218 22.1101L33.6972 22.8606L27.3615 18.2605L28.342 14.1978Z" fill="black"/>
-<path d="M60.7519 26L64.0448 22.7071L67.3377 26L64.0448 29.2929L60.7519 26Z" stroke="black"/>
-<path d="M0.729447 26L4.02234 22.7071L7.31523 26L4.02234 29.2929L0.729447 26Z" stroke="black"/>
-<path d="M30.6883 59.3724L34.1329 46.0036L37.5775 59.3724L34.1329 62.817L30.6883 59.3724Z" stroke="black"/>
-<path d="M51.6237 59.5981L55.4808 53.8124L55.1002 60.2821L52.4052 63.0028L51.6237 59.5981Z" stroke="black"/>
-<path d="M16.4601 59.5981L12.603 53.8124L12.9836 60.2821L15.6786 63.0028L16.4601 59.5981Z" stroke="black"/>
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="38" cy="38" r="37.5" transform="matrix(-1 0 0 1 76 0)" fill="url(#paint0_linear_24_38)" stroke="#70A0BB"/>
+<path d="M8 29L16 67H38H60L68 29L49 52L38 11L27 52L8 29Z" fill="#70A0BB"/>
+<path d="M68 21L72 25L68 29L64 25L68 21Z" fill="#70A0BB"/>
+<path d="M8 21L12 25L8 29L4 25L8 21Z" fill="#70A0BB"/>
+<path d="M38 3L42 7L38 11L34 6.99999L38 3Z" fill="#70A0BB"/>
+<path d="M38 41.9758L42 57.5L38 61.5L34 57.5L38 41.9758Z" fill="url(#paint1_diamond_24_38)"/>
+<path d="M58.9671 53L58.4671 61.5L55 65L53.9671 60.5L58.9671 53Z" fill="url(#paint2_diamond_24_38)"/>
+<path d="M17.0329 53.0066L17.5329 61.5066L21 65.0066L22.0329 60.5066L17.0329 53.0066Z" fill="url(#paint3_diamond_24_38)"/>
+<defs>
+<linearGradient id="paint0_linear_24_38" x1="38" y1="0" x2="38" y2="76" gradientUnits="userSpaceOnUse">
+<stop stop-color="#AEC6D3"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint1_diamond_24_38" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(38 55.5) rotate(90) scale(20 14.6169)">
+<stop stop-color="#00A5FF"/>
+<stop offset="1" stop-color="#003049"/>
+</radialGradient>
+<radialGradient id="paint2_diamond_24_38" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(57.4541 60.5) rotate(108.435) scale(11.068 20.0149)">
+<stop offset="0.108357" stop-color="#00FF47"/>
+<stop offset="1" stop-color="#460018" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint3_diamond_24_38" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19.5 60.5) rotate(71.5651) scale(11.068 20.0149)">
+<stop offset="0.108357" stop-color="#FF0059"/>
+<stop offset="1" stop-color="#460018" stop-opacity="0"/>
+</radialGradient>
+</defs>
 </svg>

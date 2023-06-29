@@ -1,0 +1,73 @@
+.underlined-text {
+  text-decoration: underline;
+  text-decoration-color: #4b81b4;
+}
+
+.syntax {
+  margin: 20px 0 5px;
+
+  font-family: ComfortaaL, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pre {
+display: block;
+margin: 0;
+padding: 0;
+}
+
+.code {
+  float: left;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 100%;
+
+  background-color: #1f1f1f;
+}
+.code1 {
+    float: left;
+    font: inherit;
+    min-width: 100%;
+    padding: 8px;
+    background-color: #1f1f1f;
+}
+
+.token-line {
+  display: block;
+}
+
+.token {
+  font-family: ZillaL, sans-serif;
+}
+
+.plain {
+  color: #fff;
+}
+
+.operator {
+  color: #808080;
+}
+
+.tag {
+  color: #679ad1;
+}
+
+.art-name {
+  color: #aadafa;
+}
+
+.art-value {
+  color: #f6a171;
+}
+
+.art-unitNumer {
+  color: #bacdab;
+}
+
+.codeBlockContent_biex {
+    border-radius: inherit;
+        direction: ltr;
+        position: relative;
+}

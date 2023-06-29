@@ -1,73 +1,316 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Вивчення основ HTML5 для новачків" />
     <title>Вивчаємо html і Css разом!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/main.min.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="heder">
-        <nav class="heder-navigation">
-            <a clas="heder-logoLink" href="./index.html">
-                <img src="./images/icons.svg/crown.svg" class="heder-logoIcon2" alt="">
-                <svg class="heder-logoIcon" width="68" height="67">
-                    <use
-                      href="./images/icons.svg/sprite.svg#crown"
-                    ></use> 
-                  </svg>
-                  <span>OK</span>Web
-            </a>
-            <ul>
-                <li><a href="">якорь</a></li>
-                <li><a href="">якорь</a></li>
-                <li><a href="">якорь</a></li>
-                <li><a href="">якорь</a></li>
+      <nav class="heder__navigation">
+        <a class="heder__logoLink" href="./index.html">
+          <img
+            class="heder__logoIcon"
+            src="./images/icons.svg/crown.svg"
+            width="60"
+            height="60"
+            alt="Логотип корона"
+          />
+          <span class="heder__logo--accent1">OK</span>
+          <span class="heder__logo--accent2">Web</span>
+        </a>
+        <ul class="heder__anchorList">
+          <li class="heder__anchorItem">
+            <a class="heder__anchorLink" href="#section1">Блок 1</a>
+          </li>
+          <li class="heder__anchorItem">
+            <a class="heder__anchorLink" href="#section2">Якір</a>
+          </li>
+          <li class="heder__anchorItem">
+            <a class="heder__anchorLink" href="#section3">Якір</a>
+          </li>
+          <li class="heder__anchorItem">
+            <a class="heder__anchorLink" href="#section4">Якір</a>
+          </li>
+          <li class="heder__anchorItem">
+            <a class="heder__anchorLink" href="#section5">Якір</a>
+          </li>
+          <li class="heder__anchorItem">
+            <a class="heder__anchorLink" href="#section6">Якір</a>
+          </li>
+          <li class="heder__anchorItem">
+            <a class="heder__anchorLink" href="#section7">Якір</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-conteiner" id="menu-conteiner" data-menu>
+        <div class="menu-conteiner__box">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a
+                  href="./index.html"
+                  class="nav-list__link nav-list__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="./portfolio.html" class="nav-list__link">Портфоліо</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#address" class="nav-list__link">Контакти</a>
+              </li>
             </ul>
-        </nav>
-        <button type="button" class="menu-button is-open" data-menu-button>
-            <svg
-              width="24"  
-              height="16"
-              aria-label="Переключатель мобильного меню"
+          </nav>
+          <ul class="list-contacts">
+            <li class="list-contacts__item">
+              <a href="tel:+380961111111" class="link-contacts contacts-phone">
+                <svg
+                  class="link-contacts__icon link-contacts__icon--width-phone"
+                  fill="currentColor"
+                >
+                  <use href="./images/icons.svg/"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
-              <use href="./images/icons.svg/sprite.svg#icon-menu" class="icon-menu"></use>
-              <use href="./images/icons.svg/sprite.svg#icon-cross" class="icon-cross"></use>
-            </svg>
-          </button>
+            </li>
+            <li class="list-contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link-contacts contacts-mail"
+              >
+                <svg
+                  class="link-contacts__icon link-contacts__icon--width-mail"
+                  fill="currentColor"
+                >
+                  <use href="./images/icons.svg/"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-heder">
+            <li class="social-heder__item">
+              <svg width="1" height="22" class="social-heder__icon">
+                <rect
+                  width="1"
+                  height="22"
+                  fill="rgba(33, 33, 33, 0.2)"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </li>
+            <li class="social-heder__item">
+              <svg width="1" height="22" class="social-heder__icon">
+                <rect
+                  width="1"
+                  height="22"
+                  fill="rgba(33, 33, 33, 0.2)"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </li>
+            <li class="social-heder__item">
+              <svg width="1" height="22" class="social-heder__icon">
+                <rect
+                  width="1"
+                  height="22"
+                  fill="rgba(33, 33, 33, 0.2)"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </li>
+            <li class="social-heder__item"></li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="menu-button is-open" data-menu-button>
+        <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+          <use
+            href="./images/icons.svg/sprite.svg#icon-menu"
+            class="icon-menu"
+          ></use>
+          <use
+            href="./images/icons.svg/sprite.svg#icon-cross"
+            class="icon-cross"
+          ></use>
+        </svg>
+      </button>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Вивчаємо круті фішки html&Css разом!</h1>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-        </section>        
-        <section class="shadow">
-            <h2>Блок 1</h2>
-            <ul> 
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title">
+          Вивчаємо круті фішки html&Css
+          <span class="hero__title--accent">разом</span>
+        </h1>
+        <svg width="224" height="248" class="hero__htmlIcon">
+          <use href="./images/icons.svg/sprite.svg#html-icon"></use>
+        </svg>
+        <svg width="224" height="248" class="hero__cssIcon">
+          <use href="./images/icons.svg/sprite.svg#css-icon"></use>
+        </svg>
+      </section>
+      <section class="section" id="section1">
+        <h2 class="section__title">Частина 1</h2>
+        <ul class="section__list">
+          <li class="section__item">
+            <div class="section__itemContent part1__container">
+              <ul class="section__itemContent__list part1__list">
+                <li class="section__itemContent__item part1__item variant1">
+                  <p>border-radius: 25px;</p>
+                </li>
+                <li class="section__itemContent__item part1__item variant2">
+                  <p>border-radius: 30% <br />5%;</p>
+                </li>
+                <li class="section__itemContent__item part1__item variant3">
+                  <p>border-radius: 10% <br />30% 70% 45%;</p>
+                </li>
+                <li class="section__itemContent__item part1__item variant4">
+                  <p>border-radius: <br />40% / 20%;</p>
+                </li>
+                <li class="section__itemContent__item part1__item variant5">
+                  <p>border-radius: 10px <br />100px / 120px;</p>
+                </li>
+                <li class="section__itemContent__item part1__item variant6">
+                  <p>border-radius: 50% <br />0% / 10% 40%;</p>
+                </li>
+              </ul>
+              <h3 class="syntax">Синтаксис</h3>
+              <!-- <div class="codeBlockContent_biex"> -->
+                <!-- <code class="code">
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">10px </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">10px 8% </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">3px 7px 3px </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">7px 0 2px 7px </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">20px / 40px </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer"
+                      >40px 7% / 10px 30px
+                    </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer"
+                      >10px 6px 2em / 67px 15px 40%
+                    </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer"
+                      >110px 5% / 50px 25em 30px 35em
+                    </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">inherit </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">initial </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">revert </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">revert-layer </span>
+                    <span class="token operator">;</span>
+                  </span>
+                  <span class="token-line">
+                    <span class="token art-name">border-radius </span>
+                    <span class="token operator">:</span>
+                    <span class="token art-unitNumer">unset </span>
+                    <span class="token operator">;</span>
+                  </span>
+                </code> -->
+              <!-- </div> -->
+              <pre>
+                <code class="code1"></code>
+              </pre>
+              
+            </div>
+            <div class="section__itemDescription">
+              <h3 class="section__box-title">border-radius</h3>
+              <p class="section__box-description">
+                Властивість
+                <supan class="underlined-text">CSS</supan> заокруглює кути
+                зовнішньої рамки елемента. Ви можете встановити один радіус для
+                створення круглих кутів або два радіуси для створення еліптичних
+                кутів.border-radius
+              </p>
+            </div>
+            <button class="section__itemButton">Клік Клік</button>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <!-- aria-label використовується для читалок коли в ссилці або конпці буде знаходитись логотип типу Facebook без тексту -->
-        <a href="" aria-label="Ссилка на Github">
-            Github
-            <svg width="20" height="20" class="list-social__icon">
-                <use
-                  href="./images/icons.svg/"
-                ></use>
-              </svg>
-        </a>
-        <p>Copyright &copy; 2023. Created by Olexandr Korol. <span class="">I love our users!</span></p>
+      <!-- aria-label використовується для читалок коли в ссилці або конпці буде знаходитись логотип типу Facebook без тексту -->
+      <a
+        href="https://github.com/Archangel-Jeremiel/tutorial-page-html-css"
+        target="_blank"
+        aria-label="Ссилка на Github"
+      >
+        Github
+        <svg width="20" height="20" class="list-social__icon">
+          <use href="./images/icons.svg/"></use>
+        </svg>
+      </a>
+      <p>
+        Copyright &copy; 2023. Created by Olexandr Korol.
+        <span class="">I love our users!</span>
+      </p>
     </footer>
     <script src="./js/menu.js"></script>
-</body>
+  </body>
 </html>

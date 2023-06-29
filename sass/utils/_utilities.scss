@@ -1,7 +1,11 @@
 body {
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto 0;
 
-    color: var(--primary-text-color);
+  }
+
+  a {
+    text-decoration: none;
   }
 
   h1,
@@ -16,9 +20,14 @@ body {
     margin-top: 0;
     margin-bottom: 0;
   }
-  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
   button {
-    // border: 0px solid transparent;
-    // border-radius: 4px;
-    // padding: 6px 22px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+    cursor: pointer;
   }

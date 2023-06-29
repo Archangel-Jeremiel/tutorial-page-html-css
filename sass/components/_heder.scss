@@ -1,18 +1,101 @@
 .heder {
-    // background-color: linear-gradient(
-    //     to right,
-    //     rgba(177, 189, 42, 0.846),
-    //     rgba(42, 58, 232, 0.879)
-    //   );
-      background-image: linear-gradient(
-        to top,
-        rgb(255, 255, 255),
-        rgba(44, 97, 126)
-      );
+  display: flex;
+  padding: 6px 10px;
+
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(250, 251, 252, 0.2987788865546218) 10%,
+    rgba(231, 237, 240, 0.4948573179271709) 25%,
+    rgba(213, 224, 229, 0.6041010154061625) 40%,
+    rgba(152, 177, 191, 0.7973783263305322) 65%,
+    rgba(44, 96, 125, 1) 100%
+  );
 }
 
-.heder-logoIcon {
-  fill: transparent;
-  &:hover, &:focus {stroke: #21f3d0;}
-  &:hover, &:focus {fill: #f3f321;}
+.heder__navigation {
+  display: flex;
+  width: 1180px;
+
+  align-items: center;
+}
+
+.heder__logoLink {
+  display: flex;
+
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "ComfortaaR", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    & .heder__logo--accent1 {
+      color: #4ac1ff;
+      text-shadow: 0px 2px 20px #4ac1ff, 0px 5px 10px #4ac1ff;
+    }
+    & .heder__logo--accent2 {
+      color: #fff237;
+      text-shadow: 0px 2px 20px #fff237, 0px 5px 10px #fff237;
+    }
+    & .heder__logoIcon {
+      box-shadow: 0 11px 11px -5px #2c617e;
+    }
+  }
+}
+
+.heder__logoIcon {
+  margin-right: 10px;
+  border-radius: 50%;
+
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.heder__logo--accent1 {
+  color: #3b525f;
+
+  transition: text-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.heder__logo--accent2 {
+  color: #2a2a2a;
+
+  transition: text-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.heder__anchorList {
+  display: flex;
+  margin-left: auto;
+  margin-right: 100px;
+  padding-left: 0;
+
+  gap: 15px;
+
+  list-style: none;
+}
+
+.heder__anchorItem {
+  font-family: RobotoConl, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.heder__anchorLink {
+  color: #2a2a2a;
+
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #fff237;
+    text-shadow: 0px 2px 20px #fff237, 0px 5px 10px #fff237;
+  }
 }

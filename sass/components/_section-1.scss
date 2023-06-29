@@ -1,0 +1,132 @@
+.section {
+  padding: 0 10px;
+}
+
+.section__title {
+  font-family: ComfortaaL, sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  font-stretch: extra-condensed;
+  line-height: 1.36;
+}
+
+.section__item {
+  display: flex;
+  position: relative;
+  border-radius: 25px;
+  width: 570px;
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
+
+  background-color: #efcd99;
+  &:nth-child(2n) {
+    background-color: #99c6ef;
+
+    &::before {
+      content: "10";
+      background-color: #efcd99;
+      color: #3b525f;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-color: #99c6ef;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &::before {
+    content: "1";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: ComfortaaR, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 29px;
+
+    color: #ffffff;
+    background-color: #99c6ef;
+
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      text-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: #efcd99;
+      color: #3b525f;
+      text-shadow: 0px 3px 10px #ffffff, 0px 2px 7px #ffffff,
+        0px 1px 5px #ffffff, 0px 0px 3px #ffffff;
+      box-shadow: inset 0 0 10px 5px rgb(255, 255, 255);
+    }
+  }
+}
+
+.section__itemContent {
+  border-radius: 15px;
+  padding: 20px;
+
+  background-color: #ffffff;
+  background: repeating-linear-gradient(60deg, rgb(255, 255, 255) 0 20px, #efcd99 0 22px);
+}
+
+.section__itemDescription {
+  border-radius: 15px;
+  padding: 20px;
+
+  background-color: #ffffff;
+}
+
+.section__box-title {
+  margin-bottom: 20px;
+
+  font-family: ComfortaaR, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.36;
+}
+
+.section__list {
+  display: flex;
+  gap: 20px;
+}
+
+.section__box-description,
+.section__list {
+  font-family: RobotoConL, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.section__itemButton {
+  border-radius: 15px;
+  padding: 10px;
+
+  background-color: #feffdb;
+
+  font-family: RobotoConR, sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.16;
+}
+
+.section__text--box {
+  margin: auto;
+  width: 350px;
+  height: 350px;
+  background-color: #99c6ef;
+}

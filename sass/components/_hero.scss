@@ -1,0 +1,26 @@
+.hero {
+    display: flex;
+    height: 480px;
+
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(216, 228, 234, 1) 15%, rgba(195, 213, 222, 1) 30%, rgba(174, 198, 211, 1) 50%, rgba(197, 214, 223, 1) 70%, rgba(231, 238, 242, 1) 85%, rgba(255, 255, 255, 1) 100%);
+}
+
+.hero__title {
+    width: 562px;
+    height: 220px;
+    margin: 100px 45px 160px;
+
+    font-family: ComfortaaL, sans-serif;
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 1.11;
+}
+.hero__title--accent {
+    color: #bb6180;
+}
+.hero__htmlIcon{
+    margin: 150px 0 82px;
+}
+.hero__cssIcon {
+    margin: 50px 50px 182px;
+}

@@ -1,0 +1,98 @@
+.menu-conteiner {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+
+  background-color: #ffffff;
+  padding: 48px 40px;
+  font-size: 20px;
+
+  &.is-open {
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 93px 15px 94px;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 1;
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    padding: 0;
+    display: none;
+    align-items: center;
+  }
+}
+
+.menu-conteiner__box {
+  display: flex;
+  background-color: white;
+}
+
+.menu-button {
+  background-color: transparent;
+  position: absolute;
+  top: 21px;
+  top: 18px;
+  right: 136px;
+  z-index: 1;
+  padding: 10px;
+  fill: #3b525f;
+  
+  
+  &:hover,
+  &:focus {
+    & .icon-menu {
+      fill: #4ac1ff;
+      box-shadow: 0 11px 11px -5px #2c617e;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: block;
+}
+
+.menu-button.is-open .icon-cross {
+  display: none;
+}
+
+svg defs stop {
+  transition: .4s;
+}
+
+svg:hover defs stop {
+  stop-color: #b6fff1;
+}
+
+svg defs feDropShadow {
+  transition: .4s;
+  flood-color: transparent;
+}
+
+svg:hover feDropShadow {
+  flood-color: #06deb5;
+}
