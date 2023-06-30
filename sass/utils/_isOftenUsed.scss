@@ -1,3 +1,5 @@
+
+
 .underlined-text {
   text-decoration: underline;
   text-decoration-color: #4b81b4;
@@ -13,9 +15,19 @@
 }
 
 .pre {
-display: block;
-margin: 0;
-padding: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  line-height: 0;
+}
+
+.pre1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  
 }
 
 .code {
@@ -23,23 +35,28 @@ padding: 0;
   border-radius: 8px;
   padding: 16px;
   min-width: 100%;
+  box-sizing: border-box;
 
   background-color: #1f1f1f;
 }
 .code1 {
-    float: left;
-    font: inherit;
-    min-width: 100%;
-    padding: 8px;
-    background-color: #1f1f1f;
+  float: left;
+  border-radius: 8px;
+  min-width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+
+  background-color: #803b3b;
 }
 
 .token-line {
-  display: block;
+  display: flex;
 }
 
 .token {
   font-family: ZillaL, sans-serif;
+  font-size: 18px;
+  line-height: 1.19;
 }
 
 .plain {
@@ -67,7 +84,5 @@ padding: 0;
 }
 
 .codeBlockContent_biex {
-    border-radius: inherit;
-        direction: ltr;
-        position: relative;
+  height: auto;
 }
