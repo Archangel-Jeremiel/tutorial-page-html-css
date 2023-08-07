@@ -1,0 +1,45 @@
+.border-side {
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-radius 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.border-side.variant1,
+.border-side.variant2,
+.border-side.variant3,
+.border-side.variant4,
+.border-side.variant5,
+.border-side.variant6 {
+  &:hover,
+  &:focus {
+    border-radius: 25px;
+    box-shadow: 0 11px 11px -5px #a33939;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
+
+.border-side.variant1 {
+  &:hover,
+  &:focus {
+    border-top: 15px solid #431c1c;
+  }
+}
+.border-side.variant2 {
+  &:hover,
+  &:focus {
+    border-bottom: 15px dotted #431c1c;
+  }
+}
+.border-side.variant3 {
+  &:hover,
+  &:focus {
+    border-right: 15px dashed #431c1c;
+  }
+}
+.border-side.variant4 {
+  &:hover,
+  &:focus {
+    border-left: 4mm ridge #973f3f;
+  }
+}

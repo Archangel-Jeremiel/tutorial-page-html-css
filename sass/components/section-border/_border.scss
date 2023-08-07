@@ -1,0 +1,57 @@
+.border {
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-radius 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.border.variant1,
+.border.variant2,
+.border.variant3,
+.border.variant4,
+.border.variant5,
+.border.variant6 {
+  &:hover,
+  &:focus {
+    border-radius: 25px;
+    box-shadow: 0 11px 11px -5px #a33939;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
+
+.border.variant1 {
+  &:hover,
+  &:focus {
+    border: 15px solid rgba(50, 169, 220, 0.6);
+  }
+}
+.border.variant2 {
+  &:hover,
+  &:focus {
+    border: 15px dotted rgba(50, 169, 220, 0.6);
+  }
+}
+.border.variant3 {
+  &:hover,
+  &:focus {
+    border: 15px dashed rgba(50, 169, 220, 0.6);
+  }
+}
+.border.variant4 {
+  &:hover,
+  &:focus {
+    border: 1rem solid rgba(50, 169, 220, 0.6);
+  }
+}
+.border.variant5 {
+  &:hover,
+  &:focus {
+    border: 15px double rgba(50, 169, 220, 0.6);
+  }
+}
+.border.variant6 {
+  &:hover,
+  &:focus {
+    border: 4.5mm ridge rgba(50, 169, 220, 0.6);
+  }
+}

@@ -5,29 +5,22 @@
   text-decoration-color: #4b81b4;
 }
 
-.syntax {
-  margin: 20px 0 5px;
-
-  font-family: ComfortaaL, sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  text-align: center;
-}
-
 .pre {
-  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
+  direction: ltr;
 
   line-height: 0;
 }
 
 .pre1 {
-  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
   direction: ltr;
-  
+
+  line-height: 0;
 }
 
 .code {
@@ -38,15 +31,6 @@
   box-sizing: border-box;
 
   background-color: #1f1f1f;
-}
-.code1 {
-  float: left;
-  border-radius: 8px;
-  min-width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-
-  background-color: #803b3b;
 }
 
 .token-line {
@@ -81,8 +65,4 @@
 
 .art-unitNumer {
   color: #bacdab;
-}
-
-.codeBlockContent_biex {
-  height: auto;
 }

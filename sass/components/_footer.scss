@@ -1,0 +1,121 @@
+.footer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #2c607d;
+
+    & .logo{
+        &:hover,
+        &:focus {
+            & .logoIcon.light {
+                box-shadow: 0 10px 10px -5px rgba(238, 248, 255, 0.5)
+            }
+        }
+    }
+}
+
+
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-list__link {
+    display: block;
+
+    &:hover,
+    &:focus {
+        & .svgIcons {
+            fill: #eef8ff;
+            filter: drop-shadow(1px 3px 2px rgba(255, 255, 255, 0.4));
+        }
+    }
+}
+
+.svgIcons {
+    fill: #ace2ff;
+    transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.crossBrowser {
+    display: block;
+}
+
+.contacts-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-family: ComfortaaL, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.mail {
+    color: #ace2ff;
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-family: RobotoConL, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300;
+
+    &:hover,
+    &:focus {
+        color: #eef8ff;
+    }
+}
+
+.number {
+    color: #ace2ff;
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-family: RobotoConL, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300;
+
+    &:hover,
+    &:focus {
+        color: #eef8ff;
+    }
+}
+
+.logoIcon.light {
+    box-shadow: 0 10px 10px -5px rgba(74, 192, 255, 0.3);
+}
+
+.heder__logo--accent1.light {
+    color: #fff;
+}
+
+.heder__logo--accent2.light {
+    color: #83d1ff;
+}
+
+.copyright {
+    display: flex;
+    align-items: flex-end;
+
+    font-family: RobotoConL, sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 300;
+    
+    color: #eef8ff;
+    text-shadow: 0px 2px 5px #eef8ff;
+}
