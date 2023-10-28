@@ -7,8 +7,13 @@
 @import "./utils/buttons";
 @import "./utils/fonts";
 @import "./utils/isOftenUsed";
+@import "./utils/qrCode";
 
 @import "./components/section-border/border-radius";
 @import "./components/section-border/border";
 @import "./components/section-border/border-side";
 @import "./components/section-border/border-color";
+
+@import "./utils/aos-master-library/animations";
+@import "./utils/aos-master-library/core";
+@import "./utils/aos-master-library/easing";

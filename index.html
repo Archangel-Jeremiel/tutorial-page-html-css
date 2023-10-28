@@ -52,86 +52,29 @@
       </nav>
       <div class="menu-conteiner" id="menu-conteiner" data-menu>
         <div class="menu-conteiner__box">
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-list__item">
-                <a
-                  href="./index.html"
-                  class="nav-list__link nav-list__link--current"
-                  >Студія</a
-                >
-              </li>
-              <li class="nav-list__item">
-                <a href="./portfolio.html" class="nav-list__link">Портфоліо</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="#address" class="nav-list__link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="list-contacts">
-            <li class="list-contacts__item">
-              <a href="tel:+380961111111" class="link-contacts contacts-phone">
-                <svg
-                  class="link-contacts__icon link-contacts__icon--width-phone"
-                  fill="currentColor"
-                >
-                  <use href="./images/icons.svg/"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li class="list-contacts__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="link-contacts contacts-mail"
-              >
-                <svg
-                  class="link-contacts__icon link-contacts__icon--width-mail"
-                  fill="currentColor"
-                >
-                  <use href="./images/icons.svg/"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="social-heder">
-            <li class="social-heder__item">
-              <svg width="1" height="22" class="social-heder__icon">
-                <rect
-                  width="1"
-                  height="22"
-                  fill="rgba(33, 33, 33, 0.2)"
-                  x="0"
-                  y="0"
-                />
-              </svg>
-            </li>
-            <li class="social-heder__item">
-              <svg width="1" height="22" class="social-heder__icon">
-                <rect
-                  width="1"
-                  height="22"
-                  fill="rgba(33, 33, 33, 0.2)"
-                  x="0"
-                  y="0"
-                />
-              </svg>
-            </li>
-            <li class="social-heder__item">
-              <svg width="1" height="22" class="social-heder__icon">
-                <rect
-                  width="1"
-                  height="22"
-                  fill="rgba(33, 33, 33, 0.2)"
-                  x="0"
-                  y="0"
-                />
-              </svg>
-            </li>
-            <li class="social-heder__item"></li>
-          </ul>
+          <button type="button" class=" " >
+            <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+              <use href="./images/icons.svg/sprite.svg#icon-cross2"></use>
+            </svg>
+          </button>
+          <button type="button" class="modal__closer-button" data-modal-close>
+            <svg width="24" height="24"  class="icon-cross3">
+              <use href="./images/icons.svg/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <button type="button" class=" ">
+            <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+              <use href="./images/icons.svg/sprite.svg#icon-cross3"></use>
+            </svg>
+          </button>
+          <button type="button" class=" ">
+            <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+              <use href="./images/icons.svg/sprite.svg#icon-cross4"></use>
+            </svg>
+          </button>
+          <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+            <use href="./images/icons.svg/sprite.svg#icon-cross4"></use>
+          </svg>
         </div>
       </div>
       <button type="button" class="menu-button is-open" data-menu-button>
@@ -154,16 +97,16 @@
           <span class="hero__title--accent">разом</span>
         </h1>
         <svg width="224" height="248" class="hero__htmlIcon">
-          <use href="./images/icons.svg/sprite.svg#html-icon"></use>
+          <use href="./images/icons.svg/sprite2.svg#html-icon"></use>
         </svg>
         <svg width="224" height="248" class="hero__cssIcon">
-          <use href="./images/icons.svg/sprite.svg#css-icon"></use>
+          <use href="./images/icons.svg/sprite2.svg#css-icon"></use>
         </svg>
       </section>
       <section class="section" id="section1">
         <h2 class="section__title">Частина 1 Border</h2>
         <ul class="section__list">
-          <li class="section__item order1">
+          <li class="section__item order1" data-aos="fade-right">
             <div class="numbering">1</div>
             <div class="section__itemContent part1__container">
               <ul class="section__itemContent__list part1__list">
@@ -283,7 +226,7 @@
             </div>
             <button class="section__itemButton">Клік Клік</button>
           </li>
-          <li class="section__item order2">
+          <li class="section__item order2" data-aos="fade-left">
             <div class="numbering">2</div>
             <div class="section__itemContent part1__container">
               <ul class="section__itemContent__list part1__list">
@@ -395,7 +338,7 @@
             </div>
             <button class="section__itemButton">Клік Клік</button>
           </li>
-          <li class="section__item order3">
+          <li class="section__item order3" data-aos="fade-left">
             <div class="numbering">3</div>
             <div class="section__itemContent part1__container">
               <ul class="section__itemContent__list part1__list">
@@ -476,7 +419,7 @@
             </div>
             <button class="section__itemButton">Клік Клік</button>
           </li>
-          <li class="section__item order4">
+          <li class="section__item order4" data-aos="fade-right">
             <div class="numbering">4</div>
             <div class="section__itemContent part1__container">
               <ul class="section__itemContent__list part1__list">
@@ -537,6 +480,7 @@
             <button class="section__itemButton">Клік Клік</button>
           </li>
         </ul>
+        
       </section>
     </main>
     <footer class="footer">
@@ -576,7 +520,7 @@
             </a>
           </li>
           <li class="footer-list__item">
-            <a class="footer-list__link" href="./viber.html" target="_blank" aria-label="Ссилка на Github">
+            <a class="footer-list__link" href="./viber.html" target="_blank" aria-label="Ссилка на Viber">
               <svg class="svgIcons" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 496 512">
                 <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
@@ -598,5 +542,9 @@
       
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
